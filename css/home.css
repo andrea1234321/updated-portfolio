@@ -50,6 +50,9 @@ a, a:visited{
   font-family: 'Monofett', monospace;
   font-size: 50px;
 }
+.animate__animated {
+  --animate-duration: 3s;
+}
 /* .home{
   height: 60vh;
   justify-content:end;
