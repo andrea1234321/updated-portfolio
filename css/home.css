@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   margin: 0;
+  margin-top: 80px;
   font-family: 'Gruppo', sans-serif;
   font-weight: 900;
   background-image: url(/assets/background-home-full.png);
@@ -10,102 +11,55 @@ body {
   background-attachment: fixed;
   scroll-behavior:smooth;
 }
+h1, p{
+  margin: 0;
+}
+p{
+  font-size: 25px;
+}
 body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  vertical-align: middle;
-}
-.home-page{
-  margin-top: 150px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  vertical-align: middle;
 }
-.title{
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-family: 'Monofett', monospace;
-  font-size: 50px;
+a, a:visited{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+:root{
+  --home-color: rgb(43, 155, 148);
+  --about-color: rgb(243, 129, 129);
+  --about-border: 1px solid rgb(245, 35, 35);
+  --projects-color: rgb(252, 227, 138);
+  --projects-border: 1px solid rgb(230, 182, 10);
+  --skills-color:  rgb(217, 242, 186);
+  --skills-border: 1px solid rgb(151, 206, 83);
+  --contact-color: rgb(149, 225, 211);
+  --contact-border: 1px solid rgb(66, 171, 152);
 }
 .page{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   height: 100vh;
   width: 100%;
 }
-.name{
-  margin: 0;
+.title{
   font-family: 'Monofett', monospace;
-  font-size: 55px;
-  color:rgb(43, 155, 148);
+  font-size: 50px;
 }
-.subtitle{
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-size: 25px;
+/* .home{
+  height: 60vh;
+  justify-content:end;
+} */
+.name{
+  font-size: 55px;
+  color: var(--home-color);
 }
 .profile-pic{
+  margin: 40px 0;
   width: 290px;
   border-radius: 50%;
-}
-.links-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 40px auto;
-  width: fit-content;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-}
-.links{
-  margin: 20px;
-  border-radius: 15px;
-  height: 30px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a, a:visited{
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-#about-link{
-  background-color: rgb(243, 129, 129);
-  border: 1px solid rgb(245, 35, 35);
-}
-#projects-link{
-  background-color: rgb(252, 227, 138);
-  border: 1px solid rgb(230, 182, 10);
-}
-#contact{
-  background-color: rgb(217, 242, 186);
-  border: 1px solid rgb(151, 206, 83);
-}
-#about-link:hover, #projects-link:hover, #contact:hover{
-  cursor: pointer;
-}
-#about-link:hover{
-  box-shadow: 1px 1px 15px red;
-}
-#projects-link:hover{
-  box-shadow: 1px 1px 15px rgb(250, 217, 3);
-}
-#contact:hover{
-  box-shadow: 1px 1px 15px rgb(126, 210, 58);
-}
-#about:active, #projects:active, #contact:active{
-  box-shadow: none;
 }

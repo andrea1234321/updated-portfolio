@@ -1,0 +1,51 @@
+.nav{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+}
+.links{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+}
+.about-link{
+  background-color: var(--about-color);
+  border: var(--about-border)
+}
+.projects-link{
+  background-color: var(--projects-color);
+  border: var(--projects-border);
+}
+.skills-link{
+  background-color: var(--skills-color);
+  border: var(--skills-border);
+}
+.contact-link{
+  background-color: var(--contact-color);
+  border: var(--contact-border);
+}
+.about-link:hover{
+  box-shadow: 1px 1px 15px red;
+}
+.projects-link:hover{
+  box-shadow: 1px 1px 15px rgb(250, 217, 3);
+}
+.skills-link:hover{
+  box-shadow: 1px 1px 15px rgb(126, 210, 58);
+}
+.contact-link:hover{
+  box-shadow: 1px 1px 15px rgb(0, 225, 255);
+}
+.links:active{
+  box-shadow: none;
+} 
