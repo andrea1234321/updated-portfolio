@@ -30,7 +30,7 @@ a, a:visited{
 :root{
   --home-color: rgb(43, 155, 148);
   --about-color: rgb(243, 129, 129);
-  --about-border: 1px solid rgb(245, 35, 35);
+  --about-border: 1px solid rgb(246, 79, 79);
   --projects-color: rgb(252, 227, 138);
   --projects-border: 1px solid rgb(230, 182, 10);
   --skills-color:  rgb(217, 242, 186);
@@ -41,14 +41,14 @@ a, a:visited{
 .page{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   height: 100vh;
   width: 100%;
 }
 .title{
   font-family: 'Monofett', monospace;
-  font-size: 50px;
+  font-size: 55px;
 }
 .animate__animated {
   --animate-duration: 3s;
@@ -58,7 +58,7 @@ a, a:visited{
   justify-content:end;
 } */
 .name{
-  font-size: 55px;
+  /* font-size: 55px; */
   color: var(--home-color);
 }
 .profile-pic{

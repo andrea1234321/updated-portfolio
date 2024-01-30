@@ -1,0 +1,41 @@
+#about{
+  /* background-color: red; */
+  align-items: center;
+}
+#about h1{
+  color: var(--about-color);
+  margin: 100px 0 50px 0;
+  
+}
+#about > div{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  /* background-color: purple; */
+}
+.caption{
+  width: 50%;
+  padding: 30px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.images-container{
+  width: 400px;
+  height: 500px;
+  border: var(--about-border);
+  border-radius: 25px;
+  box-shadow: 15px 15px 20px var(--about-color);
+  background-image: url(/assets/ballet.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* animation-name: images; */
+  /* animation-duration: 10s; */
+  /* animation-iteration-count: infinite; */
+}
+/* @keyframes images {
+  0% {background-image: url(/assets/ballet.jpeg);}
+  50% {background-image: url(/assets/chemist.JPG);}
+  100% {background-image: url(/assets/coding.jpg);}
+} */
+
