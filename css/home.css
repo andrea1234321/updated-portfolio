@@ -32,7 +32,8 @@ a, a:visited{
   --about-color: rgb(243, 129, 129);
   --about-border: 1px solid rgb(246, 79, 79);
   --projects-color: rgb(252, 227, 138);
-  --projects-border: 1px solid rgb(230, 182, 10);
+  --projects-border-color: rgb(229, 192, 60);
+  --projects-border: 1px solid rgb(229, 192, 60);
   --skills-color:  rgb(217, 242, 186);
   --skills-border: 1px solid rgb(151, 206, 83);
   --contact-color: rgb(149, 225, 211);
