@@ -9,35 +9,37 @@
 .project-container{
   display: flex;
   flex-wrap: wrap;
-  /* background-color: red; */
   justify-content: center;
   width: 90%;
 }
 .project{
   border: var(--projects-border);
   margin: 40px;
-  width: 500px;
-  height: 700px;
+  width: 70%;
+  min-height: 500px;
   border-radius: 7px;
-  background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .project> img{
-  height: 60%;
-  object-fit: cover;
+  /* height: 60%; */
+  width: 40%;
+  padding: 20px;
+  object-fit: contain;
   object-position: top;
 }
-.description{
-  height: 40%;
+.badges{
   /* background-color: red; */
+  margin: 0 auto;
+  width: 75%;
 }
 .project-links {
-  margin-top: 30px;
-  /* background-color: purple; */
+  margin-top: 20px;
 }
 .project-links > a{
   border: 2px solid rgb(229, 192, 60);
@@ -48,4 +50,7 @@
 .project-links > a:hover{
   background-color: rgb(233, 208, 120);
   border: 2px solid rgb(117, 117, 117);
+}
+.description p{
+  padding: 20px;
 }
