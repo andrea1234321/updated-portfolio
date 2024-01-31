@@ -55,16 +55,14 @@ a, a:visited{
   font-family: 'Monofett', monospace;
   font-size: 55px;
 }
-.animate__animated {
+.animate__animated.animate__zoomIn {
   --animate-duration: 3s;
 }
 .home{
-  /* background-color: red; */
   height: 100vh;
   justify-content: center;
 }
 .name{
-  /* font-size: 55px; */
   color: var(--home-color);
 }
 .profile-pic{
@@ -72,8 +70,37 @@ a, a:visited{
   width: 290px;
   border-radius: 50%;
 }
-.fa-brands, .fa-solid{
+.fa-brands, .fa-envelope, .fa-file-lines{
   color: var(--home-color);
   font-size: 60px;
   margin: 20px;
 }
+.fa-caret-down{
+  font-size: 40px;
+  color: var(--home-color);
+}
+#socials:hover{
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom p{
+  display: none;
+  color: var(--home-color)
+}
+.bottom:hover p{
+  display: block;
+}
+
