@@ -2,7 +2,7 @@ html,
 body {
   width: 100%;
   margin: 0;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   font-family: 'Gruppo', sans-serif;
   font-weight: 900;
   background-image: url(/assets/background-home-full.png);
@@ -58,10 +58,11 @@ a, a:visited{
 .animate__animated {
   --animate-duration: 3s;
 }
-/* .home{
-  height: 60vh;
-  justify-content:end;
-} */
+.home{
+  /* background-color: red; */
+  height: 100vh;
+  justify-content: center;
+}
 .name{
   /* font-size: 55px; */
   color: var(--home-color);
@@ -70,4 +71,9 @@ a, a:visited{
   margin: 40px 0;
   width: 290px;
   border-radius: 50%;
+}
+.fa-brands, .fa-solid{
+  color: var(--home-color);
+  font-size: 60px;
+  margin: 20px;
 }
