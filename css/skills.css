@@ -1,0 +1,20 @@
+#skills{
+  align-items: center;
+  border: var(--skills-border);
+  margin: 40px;
+  width: 70%;
+  min-height: 90vh;
+  border-radius: 7px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+#skills h1{
+  color: var(--skills-border-color);
+  margin: 80px 0 10px 0;
+}
+.skill-container{
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+

@@ -11,7 +11,7 @@
 }
 #about h1{
   color: var(--about-color);
-  margin: 100px 0 50px 0;
+  margin: 80px 0 50px 0;
 }
 #about > div{
   display: flex;
@@ -28,6 +28,7 @@
 .images-container{
   width: 400px;
   height: 500px;
+  margin-bottom: 40px;
   border: var(--about-border);
   border-radius: 25px;
   box-shadow: 15px 15px 20px var(--about-color);
