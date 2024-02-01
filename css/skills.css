@@ -2,8 +2,8 @@
   align-items: center;
   border: var(--skills-border);
   margin: 40px;
-  width: 70%;
-  min-height: 90vh;
+  width: 90%;
+  min-height: fit-content;
   border-radius: 7px;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -16,5 +16,31 @@
   width: 90%;
   text-align: center;
   margin-bottom: 20px;
+  display: none;
 }
-
+.skill-options button{
+  border: var(--skills-border);
+  padding: 10px;
+  border-radius: 7px;
+  margin: 5px;
+  font-size: 20px;
+}
+.skill-options button:hover{
+  background-color: var(--skills-color);
+}
+.active{
+  background-color: var(--skills-color);
+}
+.skill-container.active{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  width: 80%;
+  margin-top: 40px;
+}
+.skill-container img{
+  height: 35px;
+  margin: 20px 5px;
+}

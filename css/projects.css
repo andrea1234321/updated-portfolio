@@ -7,7 +7,7 @@
   align-items: center;
   border: var(--projects-border);
   margin: 40px;
-  width: 70%;
+  width: 90%;
   min-height: 90vh;
   border-radius: 7px;
   -webkit-backdrop-filter: blur(10px);
@@ -23,7 +23,7 @@
   padding: 40px;
   border: var(--projects-border);
   margin: 40px;
-  width: 70%;
+  width: 100%;
   min-height: 500px;
   border-radius: 7px;
   /* -webkit-backdrop-filter: blur(10px);
