@@ -106,7 +106,7 @@ a, a:visited{
 }
 .bottom p{
   display: none;
-  color: var(--home-color)
+  color: var(--home-color);
 }
 .bottom:hover p{
   display: block;
