@@ -1,7 +1,7 @@
 #projects h1{
   color: var(--projects-border-color);
   text-align: center;
-  margin: 80px 0 10px 0;
+  margin: 80px 0 30px 0;
 }
 #projects{
   align-items: center;
@@ -15,36 +15,81 @@
 }
 .project-container{
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
   width: 90%;
 }
 .project{
-  padding: 40px;
   border: var(--projects-border);
-  margin: 40px;
-  width: 100%;
-  min-height: 500px;
+  width: 360px;
+  min-height: 700px;
+  margin-bottom: 50px;
   border-radius: 7px;
-  /* -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
+}
+.bamm{
+  background-image: url(/assets/bamm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+.healthPal{
+  background-image: url(/assets/health-pal.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+}
+.levelUp{
+  background-image: url(/assets/levelup-site.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+}
+.blackJack{
+  background-image: url(/assets/blackjack.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+}
+.showcase{
+  background-image: url(/assets/showcase.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+}
+.description{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blur-filter{
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-.project> img{
-  /* height: 60%; */
-  width: 40%;
-  padding: 20px;
-  object-fit: contain;
-  object-position: top;
+  opacity: 0;
+  transition: opacity .4s;
 }
 .badges{
-  /* background-color: red; */
-  margin: 0 auto;
   width: 75%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blur-filter:hover{
+  opacity:1;
 }
 .project-links {
   margin-top: 20px;
@@ -66,7 +111,8 @@
 }
 .description p{
   padding: 20px;
+  font-size: 20px;
 }
 .description h2{
-  margin-top: 0;
+  margin: 10px;
 }
