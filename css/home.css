@@ -5,7 +5,7 @@ body {
   /* margin-top: 80px; */
   font-family: 'Gruppo', sans-serif;
   font-weight: 900;
-  background-image: url(/assets/background-home-full.png);
+  background-image: url(/assets/background-about-full.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -111,4 +111,24 @@ a, a:visited{
 .bottom:hover p{
   display: block;
 }
+.fa-angles-up{
+  position: fixed;
+  size: xl;
+  bottom: 40px;
+  right: 30px;
+  color: var(--home-color); 
+  visibility: hidden;
+  z-index: 100;
+}
+
+.fa-angles-up:hover{
+  cursor: pointer;
+}
+
+.visible{
+  visibility: visible;
+  animation: fadeIn .5s;
+}
+
+
 

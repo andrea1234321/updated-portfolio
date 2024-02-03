@@ -1,12 +1,10 @@
 let btnsEl = document.getElementsByClassName("btn");
 let skillsEl = document.getElementsByClassName("skill-container");
-console.log("skillsEl", skillsEl)
-console.log("btnsEl", btnsEl)
+let homeArrowEl= document.getElementById('home-arrow')
+
 for (let i = 0; i < btnsEl.length; i++) {
   btnsEl[i].addEventListener("click", function() {
     let current = document.getElementsByClassName("active")
-    console.log("current:", current)
-    console.log("skillsEl[i]:", skillsEl[i])
     current[0].className = current[0].className.replace(" active", "")
     current[0].className = current[0].className.replace(" active", "")
     skillsEl[i].className += " active"
@@ -14,3 +12,13 @@ for (let i = 0; i < btnsEl.length; i++) {
   });
 }
 
+let offset= 250 
+window.addEventListener("scroll", scrollToHomeScreen)
+function scrollToHomeScreen(){
+  if (window.scrollY> offset){
+    homeArrowEl.classList.add("visible")
+  }
+  if (window.scrollY< offset){
+    homeArrowEl.classList.remove("visible")
+  }
+}
