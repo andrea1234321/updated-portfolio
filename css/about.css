@@ -45,4 +45,21 @@
   50% {background-image: url(/assets/chemist.JPG);}
   100% {background-image: url(/assets/coding.jpg);}
 } */
+@media screen and (max-width: 1200px){
+  #about > div{
+    flex-direction: column;
+  }
+  .caption{
+    text-align: center;
+    width: 80%;
+  }
+  #about h1{
+    margin-bottom: 10px;
+  }
+  .images-container{
+    width: 95%;
+    max-width: 400px;
+    height: 500px;
+  }
+}
 

@@ -50,3 +50,13 @@
 .links:active{
   box-shadow: none;
 } 
+@media screen and (max-width: 700px){
+  .nav{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .links{
+    margin: 5px;
+    width: fit-content;
+  }
+}

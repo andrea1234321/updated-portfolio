@@ -12,6 +12,9 @@
   color: var(--skills-border-color);
   margin: 80px 0 10px 0;
 }
+.skill-options{
+  text-align: center;
+}
 .skill-container{
   width: 90%;
   text-align: center;

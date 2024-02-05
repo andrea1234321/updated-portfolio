@@ -62,9 +62,11 @@ a, a:visited{
 .title{
   font-family: 'Monofett', monospace;
   font-size: 55px;
+  text-align: center;
 }
 .animate__animated.animate__zoomIn {
   --animate-duration: 3s;
+  text-align: center;
 }
 .home{
   height: 100vh;
@@ -113,7 +115,7 @@ a, a:visited{
 }
 .fa-angles-up{
   position: fixed;
-  size: xl;
+  font-size: 32px;
   bottom: 40px;
   right: 30px;
   color: var(--home-color); 
@@ -130,5 +132,24 @@ a, a:visited{
   animation: fadeIn .5s;
 }
 
-
-
+@media screen and (max-width: 1200px){
+  body{
+    background-image: url(/assets/background-about-half.png)
+  }
+}
+@media screen and (max-width: 650px){
+  .fa-angles-up{
+    font-size: 20px;
+    right: 5px;
+  }
+}
+@media screen and (max-width: 1050px){
+  .fa-angles-up{
+    right: 10px;
+  }
+}
+@media screen and (max-width: 1300px){
+  .fa-angles-up{
+    right: 20px;
+  }
+}
