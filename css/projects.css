@@ -94,12 +94,13 @@
 .project-links {
   margin-top: 20px;
 }
-.project-links > button{
+.project-links > a{
   border: var(--projects-border);
   border-radius: 7px;
+  display: inline-block;
   padding: 10px;
-  /* margin-bottom: 10px; */
 }
+
 .project-links > button:hover{
   background-color: var(--projects-color);
   box-shadow: 1px 1px 15px rgb(250, 217, 3);
